@@ -18,6 +18,7 @@ fi
 }
 
 translateatom(){
+[ -e "/etc/portage/profile/pkg.translate" ] || return 0
 translation=$(grep -m 1 -F "${1}" /etc/portage/profile/pkg.translate)
 [ "$translation" != "" ] || return 0
 awk '{print $2}' FS=';' <<< "${translation}"
@@ -35,7 +36,7 @@ return $?
 }
 
 translatedebversion(){
-  grep -m 1 -F "${1};" deb.translate | awk '{print $2}' FS=';'
+  [ -e "/etc/portage/profile/deb.translate" ] && grep -m 1 -F "${1};" deb.translate | awk '{print $2}' FS=';'
 }
 
 (echo -n "#"; date +%Y-%m-%d) > /etc/portage/profile/package.provided.tst

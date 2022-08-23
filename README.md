@@ -4,8 +4,12 @@ directory profile belongs into /etc/portage
 
 # Useing it
 
-`make`
+`make` will fail the first time
+do your mappings or call `make` again.
 
+
+`make clean` deletes tmp files
+`make clean-all` deletes all generated files
 
 
 # Scripts
@@ -20,12 +24,23 @@ dirtycleanatom.sh: cleans package.provided.tst versions from debian patch versio
 
 
 # Files
+
 deb.provided - list of installed debian packages
 
 pkg.translate - deb pkg name to gentoo category/packagename translation
 
+deb.translate - deb pkg name & version fixed translation
+
+package.provided - final result
+
+pkg.generalassumed - empty, define unmapped base assumptions here (e.g. gnuconfig)
+
+## Tmp Files
+
+pkg.multiple - found options per pkgname
+
+package.provided.nondirty - result of the deb.translate fixed mapping
+
 package.provided.tst - list of packages with assumed corresponding category
 
 package.provided.dirty - list with a valid version
-
-
