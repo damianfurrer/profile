@@ -2,13 +2,13 @@
 dpkgtopkgprovided - /etc/portage
 directory profile belongs into /etc/portage
 
-#Useing it
+# Useing it
 
-'''make'''
+`make`
 
 
 
-#Scripts
+# Scripts
 
 getdpkgs.sh:       queries installed packages & writes them to deb.provided
 
@@ -19,7 +19,7 @@ map.sh:            manually map package names with multiple possible translation
 dirtycleanatom.sh: cleans package.provided.tst versions from debian patch versions etc. (we hope these don't break compatibility with the underlying version) writes package.provided.dirty
 
 
-#Files
+# Files
 deb.provided - list of installed debian packages
 
 pkg.translate - deb pkg name to gentoo category/packagename translation
