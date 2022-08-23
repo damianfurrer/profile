@@ -1,5 +1,5 @@
 #!/bin/bash
-tomap=$(cat deb.tomap)
+tomap=$(grep -v "^#" deb.tomap)
 declare -i i
 while [ 1 -eq 1 ]
 do
@@ -26,3 +26,5 @@ do
 #exit
 
 done  #<<< $(tail -n -1 deb.tomap)
+
+echo "run searchdeb.sh & make manually to update"

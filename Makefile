@@ -22,7 +22,7 @@ clean:
 	-rm deb.notfound deb.tomap package.provided.tst pkg.multiple package.provided.dirty package.provided.nondirty package.provided.bak
 
 clean-all: clean
-	-rm deb.provided pkg.translate deb.translate
+	-rm deb.provided pkg.translate deb.translate pkg.generalassumed
 
 regen: clean-all package.provided.tst
 

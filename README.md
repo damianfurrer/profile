@@ -44,3 +44,12 @@ package.provided.nondirty - result of the deb.translate fixed mapping
 package.provided.tst - list of packages with assumed corresponding category
 
 package.provided.dirty - list with a valid version
+
+
+# Translation
+## my versions
+deb.translate:
+https://gist.github.com/damianfurrer/2f661e0adca9e1faa5814195945107a5/raw/a466de16f4c66145fe6bfc685e7ebc0cb58abd4e/deb.translate.bak
+
+pkg.translate:
+https://gist.github.com/damianfurrer/6af2f646476ba2a75b57ae0097db8a23/raw/0d9be1d7b929aa1d69d54bfc8104f513c9327c6b/pkg.translate.bak
