@@ -1,0 +1,2 @@
+# profile
+dpkgtopkgprovided - /etc/portage
