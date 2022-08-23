@@ -53,3 +53,6 @@ https://gist.github.com/damianfurrer/2f661e0adca9e1faa5814195945107a5/raw/a466de
 
 pkg.translate:
 https://gist.github.com/damianfurrer/6af2f646476ba2a75b57ae0097db8a23/raw/0d9be1d7b929aa1d69d54bfc8104f513c9327c6b/pkg.translate.bak
+
+pkg.generalassumed:
+https://gist.github.com/damianfurrer/5c8cef02867c45ea9a0fe76386a06443/raw/e5d5f24c51e2a9c9a0f70b5f0b27795742b38c35/pkg.generalassumed
